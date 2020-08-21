@@ -2,7 +2,7 @@ import pyshark
 
 count = 0
 
-capture = pyshark.FileCapture('HTTP_traffic.pcap', display_filter='http contains password')
+capture = pyshark.FileCapture(path+'.pcap', display_filter='http contains password')
 
 for packet in capture:
     count = count + 1
